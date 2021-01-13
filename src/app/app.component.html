@@ -5,11 +5,24 @@
       aria-label="Example icon-button with home icon">
       <mat-icon>home</mat-icon>
     </a>
-    <span class="example-spacer"></span>
     <a mat-icon-button href="/counter" class="example-icon"
       aria-label="Example icon-button with mouse icon">
       <mat-icon>mouse</mat-icon>
     </a>
+    <span class="example-spacer"></span>
+    <ng-container>
+      <mat-icon>language</mat-icon>
+      <button mat-button [matMenuTriggerFor]="menu">
+        {{siteLanguage}}
+        <mat-icon>arrow_drop_down</mat-icon>
+      </button>
+      <mat-menu #menu="matMenu">
+        <a *ngFor="let language of languageList" mat-menu-item
+          href="/{{language.code}}">{{language.label}}</a>
+        <!-- <a mat-menu-item href="/es">Español</a>
+        <a mat-menu-item href="/tlh">Klingon</a> -->
+      </mat-menu>
+    </ng-container>
   </mat-toolbar-row>
 </mat-toolbar>
 <div class="container">
