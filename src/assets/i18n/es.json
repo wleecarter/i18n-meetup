@@ -1,9 +1,9 @@
 {
   "welcome": "¡Bienvenidos!",
-  "click": "Presiona",
-  "do-not-click": "No Presiones",
-  "error": "¡Algo esta horriblemente mal!",
-  "zero-clicks-message": "No has presionado",
-  "one-click-message": "Has presionado una vez",
-  "many-clicks-message": "Has presionado {{count}} veces"
+  "click": "Haz Click",
+  "do-not-click": "No Hagas Click",
+  "error": "¡Fue horrible! ¡Fue horrible!",
+  "zero-clicks-message": "No has hecho click",
+  "one-click-message": "Hiciste click una vez",
+  "many-clicks-message": "Hiciste click {{count}} veces"
 }
