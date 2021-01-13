@@ -1,9 +1,8 @@
 <app-nav-bar></app-nav-bar>
 <div class="container">
   <h1 i18n>Welcome!</h1>
-  <div>
-    count: {{ count }}
-  </div>
+  <div i18n>{ count, plural, =0 {You haven't clicked yet} =1 {You have clicked once}
+    other {You have clicked {{count}} times} }</div>
   <div>
     <button mat-raised-button color="primary" (click)="increment()" i18n>Click Me</button>
   </div>

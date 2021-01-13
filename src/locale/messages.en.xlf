@@ -10,6 +10,38 @@
           <context context-type="linenumber">3</context>
         </context-group>
       </trans-unit>
+      <trans-unit id="1545250084138044289" datatype="html">
+        <source>Something has gone horribly wrong!</source>
+        <target>Something has gone horribly wrong!</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.ts</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="660193d2c53927d1bb73293b94b9c1e4d3f11241" datatype="html">
+        <source>{VAR_PLURAL, plural, =0 {You haven&apos;t clicked yet} =1 {You have clicked once} other {You have clicked <x id="INTERPOLATION"/> times}}</source>
+        <target>{VAR_PLURAL, plural, =0 {You haven&apos;t clicked yet} =1 {You have clicked once} other {You have clicked <x id="INTERPOLATION"/> times}}</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">4,5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="517b509b6a69186ddb6bc8f678624052dc2d18a3" datatype="html">
+        <source>Click Me</source>
+        <target>Click Me</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="9caf1ed17eef652a511b475870782d7613081577" datatype="html">
+        <source>Don&apos;t Click Me</source>
+        <target>Don&apos;t Click Me</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+      </trans-unit>
     </body>
   </file>
 </xliff>

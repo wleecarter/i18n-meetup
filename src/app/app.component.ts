@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { MatSnackBar } from '@angular/material/snack-bar';
 
 @Component({
   selector: 'app-root',
@@ -8,7 +9,7 @@ import { Component } from '@angular/core';
 export class AppComponent {
   count = 0;
 
-  constructor() {}
+  constructor(private snackBar: MatSnackBar) {}
 
   ngOnInit(): void {}
 
@@ -17,6 +18,7 @@ export class AppComponent {
   }
 
   error(): void {
-    console.error('something has gone horribly wrong!');
+    const message = $localize`Something has gone horribly wrong!`;
+    this.snackBar.open(message, '', { duration: 3000 });
   }
 }
