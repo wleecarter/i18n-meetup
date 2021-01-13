@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-
 import { TranslocoService } from '@ngneat/transloco';
 
 @Component({
@@ -23,7 +22,6 @@ export class NavBarComponent implements OnInit {
   ngOnInit() {}
 
   changeSiteLanguage(language: string): void {
-    console.log('language', language);
     this.service.setActiveLang(language);
     this.siteLanguage =
       this.languageList.find((f) => f.code === language)?.label ?? 'English';
