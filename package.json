@@ -17,7 +17,7 @@
   ],
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "ng serve --configuration=en",
     "server": "node server",
     "build": "ng build",
     "test": "ng test",
