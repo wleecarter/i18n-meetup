@@ -1,0 +1,9 @@
+{
+  "welcome": "Nuqneh!",
+  "click": "tlhaw'DIyuS",
+  "do-not-click": "yISaHQo'",
+  "error": "jaS jIHubbe'DI' vay', 'ach jaS je!",
+  "zero-clicks-message": "bIlengta'",
+  "one-click-message": "voDleH",
+  "many-clicks-message": "wanI'vam {{count}} DaleghmeH"
+}

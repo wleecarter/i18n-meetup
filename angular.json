@@ -5,14 +5,7 @@
   "projects": {
     "i18n-meetup": {
       "projectType": "application",
-      "i18n": {
-        "sourceLocale": "en-US",
-        "locales": {
-          "en": "src/locale/messages.en.xlf",
-          "es": "src/locale/messages.es.xlf",
-          "tlh": "src/locale/messages.tlh.xlf"
-        }
-      },
+
       "schematics": {
         "@schematics/angular:class": {
           "skipTests": true
@@ -51,7 +44,6 @@
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.app.json",
-            "localize": true,
             "aot": true,
             "assets": ["src/favicon.ico", "src/assets"],
             "styles": [
@@ -87,15 +79,6 @@
                   "maximumError": "10kb"
                 }
               ]
-            },
-            "en": {
-              "localize": ["en"]
-            },
-            "es": {
-              "localize": ["es"]
-            },
-            "tlh": {
-              "localize": ["tlh"]
             }
           }
         },
@@ -107,22 +90,7 @@
           "configurations": {
             "production": {
               "browserTarget": "i18n-meetup:build:production"
-            },
-            "en": {
-              "browserTarget": "i18n-meetup:build:en"
-            },
-            "es": {
-              "browserTarget": "i18n-meetup:build:es"
-            },
-            "tlh": {
-              "browserTarget": "i18n-meetup:build:tlh"
             }
-          }
-        },
-        "extract-i18n": {
-          "builder": "@angular-devkit/build-angular:extract-i18n",
-          "options": {
-            "browserTarget": "i18n-meetup:build"
           }
         },
         "test": {

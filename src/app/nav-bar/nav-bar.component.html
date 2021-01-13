@@ -14,7 +14,7 @@
       </button>
       <mat-menu #menu="matMenu">
         <a *ngFor="let language of languageList" mat-menu-item
-          href="/{{language.code}}">{{language.label}}</a>
+          (click)="changeSiteLanguage(language.code)">{{language.label}}</a>
       </mat-menu>
     </ng-container>
   </mat-toolbar-row>

@@ -48,7 +48,7 @@ Angular provides the following built-in data transformation pipes that use the L
 
 ### 6. Merge translations into the app
 
-To merge the completed translations into the app, use the Angular CLI to build a copy of the app's distributable files for each locale.
+To merge the completed translations into the app, use the Angular CLI to `build` a copy of the app's distributable files for each locale.
 
 To build a separate distributable copy of the app for each locale, define the locales in the build configuration in your project's workspace configuration file angular.json.
 
@@ -60,11 +60,15 @@ After merging, you can serve each distributable copy of the app using server-sid
 
 ## i18n with transloco
 
-## reference
+`ng add @ngneat/transloco`
 
-### reference
+## reference
 
 - [Internationalization and localization](https://en.wikipedia.org/wiki/Internationalization_and_localization)
 - [Language localisation - Language tags and codes](https://en.wikipedia.org/wiki/Language_localisation#Language_tags_and_codes)
 - [Codes for constructed languages](https://en.wikipedia.org/wiki/Codes_for_constructed_languages)
-- Angular docs - [Localizing your app](https://angular.io/guide/i18n)
+- [Angular i18n guide](https://angular.io/guide/i18n)
+- [Transloco](https://ngneat.github.io/transloco/)
+- [ngx-translate](http://www.ngx-translate.com)
+- [English-to-Klingon translations](https://www.bing.com/translator)
+- [Klingon Language Institute](https://www.kli.org)

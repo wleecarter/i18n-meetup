@@ -1,0 +1,11 @@
+{
+  "welcome": "Welcome!",
+  "pipe-welcome": "Welcome from the Pipe!",
+  "attribute-welcome": "Welcome from the Attribute!",
+  "click": "Click Me",
+  "do-not-click": "Don't Click Me",
+  "error": "Something has gone horribly wrong!",
+  "zero-clicks-message": "You haven't clicked yet",
+  "one-click-message": "You've clicked once",
+  "many-clicks-message": "You've clicked {{count}} times"
+}

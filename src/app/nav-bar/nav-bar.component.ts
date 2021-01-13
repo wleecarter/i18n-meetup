@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
+import { TranslocoService } from '@ngneat/transloco';
+
 @Component({
   selector: 'app-nav-bar',
   templateUrl: './nav-bar.component.html',
@@ -16,11 +18,14 @@ export class NavBarComponent implements OnInit {
     { code: 'tlh', label: 'tlhIngan' },
   ];
 
-  constructor() {}
+  constructor(private service: TranslocoService) {}
 
-  ngOnInit() {
-    this.siteLocale = window.location.pathname.split('/')[1];
+  ngOnInit() {}
+
+  changeSiteLanguage(language: string): void {
+    console.log('language', language);
+    this.service.setActiveLang(language);
     this.siteLanguage =
-      this.languageList.find((f) => f.code === this.siteLocale)?.label ?? 'English';
+      this.languageList.find((f) => f.code === language)?.label ?? 'English';
   }
 }
