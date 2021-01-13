@@ -35,20 +35,23 @@ Angular provides the following built-in data transformation pipes that use the L
 
 - Mark text for translations.
 - Add helpful descriptions and meanings to help the translator with additional information or context.
-- Translate text not for display.
 - Mark element attributes for translations, such as an image's title - attribute.
 - Mark plurals and alternates for translation in order to comply with the pluralization rules and grammatical constructions of different languages.
 
 ### 5. Work with translation files
 
 - Extract the source language file. You can optionally change the - location, format, and name.
+  - `ng extract-i18n --output-path src/locale`
 - Create a translation file for each language by copying the source language file.
 - Translate each translation file.
 - Translate plurals and alternate expressions separately.
 
 ### 6. Merge translations into the app
 
-To merge the completed translations into the app, use the Angular CLI to build a copy of the app's distributable files for each locale.
+- you can only `serve` one configuration at a time:
+- `ng serve --configuration=en`
+
+To merge the completed translations into the app, use the Angular CLI to `build` a copy of the app's distributable files for each locale.
 
 To build a separate distributable copy of the app for each locale, define the locales in the build configuration in your project's workspace configuration file angular.json.
 
@@ -58,13 +61,20 @@ After merging, you can serve each distributable copy of the app using server-sid
 
 ### 7. Deploy multiple locales
 
+- `npm build`
+- `npm run server`
+
 ## i18n with transloco
+
+`ng add @ngneat/transloco`
 
 ## reference
 
-### reference
-
 - [Internationalization and localization](https://en.wikipedia.org/wiki/Internationalization_and_localization)
 - [Language localisation - Language tags and codes](https://en.wikipedia.org/wiki/Language_localisation#Language_tags_and_codes)
+- [Angular i18n guide](https://angular.io/guide/i18n)
+- [Transloco](https://ngneat.github.io/transloco/)
+- [ngx-translate](http://www.ngx-translate.com)
+- [English-to-Klingon translations](https://www.bing.com/translator)
+- [Klingon Language Institute](https://www.kli.org)
 - [Codes for constructed languages](https://en.wikipedia.org/wiki/Codes_for_constructed_languages)
-- Angular docs - [Localizing your app](https://angular.io/guide/i18n)
